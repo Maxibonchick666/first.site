@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>Обо мне</title>
+  <!-- Исправлено: ссылки в одну строку -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Псковский учитель</div>
+    <!-- Кнопка бургера -->
+    <button class="burger-menu" id="burger-btn">☰</button>
+    
+    <!-- Меню навигации (обязательно закрываем div) -->
+    <div class="nav" id="nav-menu">
+      <a href="https://vk.com/id51742726">Обо мне</a>
+      <button id="theme-toggle-btn" class="theme-btn">🌙</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Привет! Я учитель из Пскова! </h1>
+    <p>Добро пожаловать на мой личный сайт</p>
+    <a href="https://vk.com/id51742726" class="btn" id="my-btn">Связаться со мной</a>
+  </div>
+
+  <div class="message-area" id="feedback-message"></div> 
+
+  <!-- Блок услуг -->
+  <div class="services">
+    <div class="card">
+      <h3>История, обществознание! </h3>
+      <p>Подготовка к экзаменам - ЕГЭ, ОГЭ, ВПР!</p>
+    </div>
+    <div class="card">
+      <h3>Подготовка к ЕГЭ</h3>
+      <p>7 лет практики. Ноль неуспешных кейсов. Довольны родители и ученики!</p>
+    </div>
+    <div class="card">
+      <h3>Подготовка к ОГЭ</h3>
+      <p>Дайте мне две недели занятий по три раза в неделю и ваш ребенок с нуля уже сдаст ОГЭ.</p>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="main">
+    <div class="advices">
+      <h2>Мои советы для юного историка:</h2>
+      <ul>
+        <li>Заниматься ежедневно</li>
+        <li>Обращаться к историческим документам</li>
+        <li>Верить в себя</li>
+      </ul>
+    </div> 
+
+    <!-- Исправлено: класс в нижнем регистре -->
+    <div class="society">
+      <p>Для отличного знания обществознания вам понадобятся:</p>
+      <ol>
+        <li>Паблики с новостями экономики и политики</li>
+        <li>Умение общаться на эти темы для внутренней структуры предмета</li>
+        <li>Обучение не только по блокам, но и постоянное решение полноценных тестов</li>
+      </ol>
+    </div> 
+  </div>
+
+  <!-- Контакты -->
+  <div class="contacts-section">
+    <div class="contacts-info">
+      <h2>Контакты</h2>
+      <p>Остались вопросы? Свяжитесь со мной любым удобным способом!</p>
+      <p><strong>Телефон:</strong> +7 (900) 123-45-67</p>
+      <p><strong>Email:</strong> mihailov.maxim9@yandex.ru</p>
+      <p><strong>Адрес:</strong> г. Псков, ул. Ленина, д. 1</p>
+    </div>
+
+    <div class="contacts-form">
+      <h2>Напишите мне</h2>
+      
+      <!-- ИСПРАВЛЕНО: data-netlify="true" вместо просто netlify -->
+      <form name="contact-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact-form" />
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="email" name="email" placeholder="Ваш Email" required />
+        <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Сайт учителя из Пскова. Все права защищены.</p>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
