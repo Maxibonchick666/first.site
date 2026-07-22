@@ -83,8 +83,11 @@
       <h2>Напишите мне</h2>
       
       <!-- ИСПРАВЛЕНО: data-netlify="true" вместо просто netlify -->
-      <form name="contact-form" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact-form" />
+     <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- СЮДА ВСТАВЬ СВОЙ КЛЮЧ ИЗ ПИСЬМА ВМЕСТО СЛОВ "ТВОЙ_КЛЮЧ_ИЗ_ПИСЬМА" -->
+        <input type="hidden" name="access_key"
+         value="4eaf84c6-55e8-491a-be3e-14229f576263">
+        
         <input type="text" name="name" placeholder="Ваше имя" required />
         <input type="email" name="email" placeholder="Ваш Email" required />
         <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
